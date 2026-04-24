@@ -2,7 +2,7 @@ import { Car } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Footer = () => (
-  <footer className="bg-foreground text-primary-foreground py-12">
+  <footer className="bg-foreground text-background dark:bg-card dark:text-foreground border-t border-border py-12">
     <div className="container mx-auto px-4">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
         <div>
@@ -35,7 +35,7 @@ const Footer = () => (
           </div>
         </div>
       </div>
-      <div className="border-t border-primary-foreground/10 mt-8 pt-6 text-center text-xs opacity-50">
+      <div className="border-t border-background/10 dark:border-border mt-8 pt-6 text-center text-xs opacity-50">
         © 2026 SmartPark. All rights reserved.
       </div>
     </div>
