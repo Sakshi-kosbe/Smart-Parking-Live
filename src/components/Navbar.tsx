@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Car, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import ThemeToggle from "./ThemeToggle";
 
 const navLinks = [
   { to: "/", label: "Home" },
@@ -42,6 +43,7 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex items-center gap-2">
+          <ThemeToggle />
           <Button variant="ghost" size="sm" asChild>
             <Link to="/login">Log In</Link>
           </Button>
@@ -50,9 +52,12 @@ const Navbar = () => {
           </Button>
         </div>
 
-        <button className="md:hidden p-2" onClick={() => setOpen(!open)}>
-          {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-        </button>
+        <div className="md:hidden flex items-center gap-1">
+          <ThemeToggle />
+          <button className="p-2" onClick={() => setOpen(!open)}>
+            {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </button>
+        </div>
       </div>
 
       <AnimatePresence>
