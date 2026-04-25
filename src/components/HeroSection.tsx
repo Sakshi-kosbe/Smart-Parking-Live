@@ -46,7 +46,7 @@ const HeroSection = () => (
               Find Parking <ArrowRight className="h-4 w-4" />
             </Link>
           </Button>
-          <Button size="lg" variant="outline" className="border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10" asChild>
+          <Button size="lg" variant="outline" className="border-white/30 bg-white/5 text-white hover:bg-white/15 hover:text-white" asChild>
             <Link to="/about">Learn More</Link>
           </Button>
         </motion.div>
