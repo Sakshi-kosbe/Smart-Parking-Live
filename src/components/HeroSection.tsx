@@ -25,9 +25,17 @@ const HeroSection = () => (
         >
           <button
             type="button"
-            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/95 text-primary text-sm font-semibold mb-6 border border-white shadow-glow dark:bg-primary dark:text-primary-foreground dark:border-primary/60 transition-all duration-300 hover:scale-[1.04] hover:shadow-[0_0_24px_hsl(var(--primary)/0.45)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background dark:hover:shadow-[0_0_28px_hsl(var(--primary)/0.6)]"
+            tabIndex={0}
+            aria-label="IoT-Powered Smart Parking — learn more"
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                (e.currentTarget as HTMLButtonElement).click();
+              }
+            }}
+            className="group inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/95 text-primary text-sm font-semibold mb-6 border border-white shadow-glow dark:bg-primary dark:text-primary-foreground dark:border-primary/60 transition-all duration-300 hover:scale-[1.04] hover:shadow-[0_0_24px_hsl(var(--primary)/0.45)] focus:outline-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-primary focus-visible:ring-offset-background dark:focus-visible:ring-primary-foreground dark:focus-visible:ring-offset-background dark:hover:shadow-[0_0_28px_hsl(var(--primary)/0.6)]"
           >
-            <Zap className="h-3.5 w-3.5 transition-transform duration-300 group-hover:rotate-12" /> IoT-Powered Smart Parking
+            <Zap className="h-3.5 w-3.5 transition-transform duration-300 group-hover:rotate-12 group-focus-visible:rotate-12" aria-hidden="true" /> IoT-Powered Smart Parking
           </button>
           <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6">
             Find & Reserve Parking{" "}
