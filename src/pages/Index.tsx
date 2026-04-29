@@ -6,8 +6,10 @@ import Footer from "@/components/Footer";
 const Index = () => (
   <div className="min-h-screen">
     <Navbar />
-    <HeroSection />
-    <FeaturesSection />
+    <main id="main-content" tabIndex={-1} className="focus:outline-none">
+      <HeroSection />
+      <FeaturesSection />
+    </main>
     <Footer />
   </div>
 );
