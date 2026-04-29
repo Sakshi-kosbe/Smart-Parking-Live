@@ -23,7 +23,7 @@ const HeroSection = () => (
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/25 text-primary-foreground text-sm font-medium mb-6 border border-primary-foreground/10">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/95 text-primary text-sm font-semibold mb-6 border border-white shadow-glow dark:bg-primary dark:text-primary-foreground dark:border-primary/60">
             <Zap className="h-3.5 w-3.5" /> IoT-Powered Smart Parking
           </div>
           <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6">
