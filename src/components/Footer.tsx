@@ -9,11 +9,11 @@ const Footer = () => (
           <div className="flex items-center gap-2 font-display font-bold text-lg mb-3">
             <Car className="h-5 w-5" /> SmartPark
           </div>
-          <p className="text-sm opacity-70">IoT-based smart parking solution for modern cities.</p>
+          <p className="text-sm opacity-80">IoT-based smart parking solution for modern cities.</p>
         </div>
         <div>
           <h4 className="font-semibold mb-3 text-sm uppercase tracking-wider opacity-80">Product</h4>
-          <div className="flex flex-col gap-2 text-sm opacity-70">
+          <div className="flex flex-col gap-2 text-sm opacity-80">
             <Link to="/dashboard" className="hover:opacity-100 transition-opacity">Dashboard</Link>
             <Link to="/about" className="hover:opacity-100 transition-opacity">About</Link>
             <Link to="/contact" className="hover:opacity-100 transition-opacity">Contact</Link>
@@ -21,7 +21,7 @@ const Footer = () => (
         </div>
         <div>
           <h4 className="font-semibold mb-3 text-sm uppercase tracking-wider opacity-80">Features</h4>
-          <div className="flex flex-col gap-2 text-sm opacity-70">
+          <div className="flex flex-col gap-2 text-sm opacity-80">
             <span>Real-time Tracking</span>
             <span>Smart Booking</span>
             <span>IoT Sensors</span>
@@ -29,13 +29,13 @@ const Footer = () => (
         </div>
         <div>
           <h4 className="font-semibold mb-3 text-sm uppercase tracking-wider opacity-80">Contact</h4>
-          <div className="flex flex-col gap-2 text-sm opacity-70">
+          <div className="flex flex-col gap-2 text-sm opacity-80">
             <span>hello@smartpark.io</span>
             <span>+1 (555) 123-4567</span>
           </div>
         </div>
       </div>
-      <div className="border-t border-background/10 dark:border-border mt-8 pt-6 text-center text-xs opacity-50">
+      <div className="border-t border-background/10 dark:border-border mt-8 pt-6 text-center text-xs opacity-70">
         © 2026 SmartPark. All rights reserved.
       </div>
     </div>
