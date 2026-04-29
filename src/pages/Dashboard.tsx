@@ -50,7 +50,7 @@ const Dashboard = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
-      <div className="pt-20 pb-8">
+      <main id="main-content" tabIndex={-1} className="pt-20 pb-8 focus:outline-none">
         <div className="container mx-auto px-4">
           <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="mb-6">
             <h1 className="font-display text-2xl font-bold mb-1">Find Parking</h1>
@@ -136,7 +136,7 @@ const Dashboard = () => {
             </div>
           )}
         </div>
-      </div>
+      </main>
 
       <BookingModal
         slot={bookingSlot}

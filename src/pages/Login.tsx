@@ -87,7 +87,7 @@ const Login = () => {
             </button>
           </p>
         </motion.div>
-      </div>
+      </main>
     </div>
   );
 };
