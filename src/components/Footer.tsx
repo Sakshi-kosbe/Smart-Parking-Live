@@ -35,7 +35,7 @@ const Footer = () => (
           </div>
         </div>
       </div>
-      <div className="border-t border-background/10 dark:border-border mt-8 pt-6 text-center text-xs opacity-50">
+      <div className="border-t border-background/10 dark:border-border mt-8 pt-6 text-center text-xs opacity-70">
         © 2026 SmartPark. All rights reserved.
       </div>
     </div>

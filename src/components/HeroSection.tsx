@@ -23,14 +23,14 @@ const HeroSection = () => (
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/20 text-primary-foreground/90 text-sm font-medium mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/25 text-primary-foreground text-sm font-medium mb-6 border border-primary-foreground/10">
             <Zap className="h-3.5 w-3.5" /> IoT-Powered Smart Parking
           </div>
           <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6">
             Find & Reserve Parking{" "}
             <span className="text-primary">In Seconds</span>
           </h1>
-          <p className="text-lg text-primary-foreground/70 max-w-xl mb-8">
+          <p className="text-lg text-primary-foreground/85 max-w-xl mb-8">
             Real-time parking availability powered by IoT sensors. No more circling blocks—find, reserve, and navigate to your spot instantly.
           </p>
         </motion.div>
@@ -60,7 +60,7 @@ const HeroSection = () => (
           {stats.map((s) => (
             <div key={s.label}>
               <div className="text-2xl font-display font-bold text-primary-foreground">{s.value}</div>
-              <div className="text-sm text-primary-foreground/50">{s.label}</div>
+              <div className="text-sm text-primary-foreground/75">{s.label}</div>
             </div>
           ))}
         </motion.div>
