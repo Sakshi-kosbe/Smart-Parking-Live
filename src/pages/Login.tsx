@@ -19,7 +19,7 @@ const Login = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
-      <div className="pt-24 pb-16 flex items-center justify-center">
+      <main id="main-content" tabIndex={-1} className="pt-24 pb-16 flex items-center justify-center focus:outline-none">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

@@ -19,7 +19,7 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
-      <div className="pt-24 pb-16">
+      <main id="main-content" tabIndex={-1} className="pt-24 pb-16 focus:outline-none">
         <div className="container mx-auto px-4 max-w-4xl">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-12">
             <h1 className="font-display text-4xl font-bold mb-4">Contact Us</h1>

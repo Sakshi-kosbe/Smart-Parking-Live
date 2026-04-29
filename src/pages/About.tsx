@@ -53,7 +53,7 @@ const About = () => (
           </p>
         </div>
       </div>
-    </div>
+    </main>
     <Footer />
   </div>
 );
